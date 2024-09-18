@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="home">
+    <header>
+
+        <nav>
+
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+
+            </ul>
+
+            <ul>
+                <li><img src="logo.jpg" width="70px" height="70px" alt=""></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="products.html">Products</a></li>
+                <li class="hideOnMobile"><a href="contactus.html">Contact us</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+            const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+    </header>
+<div class="main">
+    <img src="logopng.png" width="100px" alt="">
+    <div class="title">
+        <h1>Discover Your <span class="span">True Beauty</span></h1>
+        <p>Welcome to a world where beauty knows no limits.</p>
+        <a href="products.html"><button>BOOK NOW</button></a>
+    </div>
+    
+</div>
+</div>
+<footer>
+    <div class="footer-content">
+        <h3>My Website</h3>
+        <p>Follow us on social media for the latest updates and news.</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/profile.php?id=100009927794610"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
